@@ -5,15 +5,16 @@
   --accent: #7dd3fc;
 }
 
-html,body,#app{height:100%;}
+html,body{height:100%;}
 body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: linear-gradient(180deg,var(--bg),#071028);
   color: #e6eef8;
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   justify-content:center;
+  min-height:100%;
 }
 
 #app{
@@ -22,10 +23,34 @@ body{
   border-radius:10px;
   box-shadow: 0 6px 24px rgba(2,6,23,0.6);
   width: 90vw;
+  margin: 40px auto;
+}
+
+.chart-section {
+  margin-bottom: 60px;
 }
 
 a{color:var(--accent);}
 
-#chart {
-  width: 50%;
+canvas {
+  width: 100% !important;
+  margin-bottom: 4px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 32px 0 4px;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.source {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 4px 0 0;
 }
